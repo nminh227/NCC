@@ -1,0 +1,181 @@
+#header{
+    height: 100%;
+    background-color: black;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index:1;
+}
+
+#nav, .subnav{
+    list-style: none;
+}
+
+#nav{
+    padding-left: 0;
+}
+
+#nav li{
+    position: relative;
+    border-bottom: .5px solid #ccc;
+    padding-right: 2rem;
+}
+
+#nav > li > a{
+    color: #ccc;
+    text-transform: uppercase;
+}
+
+#nav li a{
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+}
+
+#nav .subnav li:hover a,
+#nav > li:hover > a{
+    color: #fff;
+    background-color: rgb(144, 139, 139);
+}
+
+#nav .subnav{
+    min-width: 160px;
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    /* can chinh de phong position k dung vi tri o cac browser khac */
+    top:100%;
+    left: 0;
+}
+
+#main{
+    max-width: 88%; 
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    margin-left: auto;
+    justify-content: center;
+}
+
+
+.grid {
+    display: grid;
+    gap: 1.25rem;
+  }
+
+.padding-16 {
+    padding-top: 16px!important;
+    padding-bottom: 16px!important;
+}
+
+.padding-32 {
+    padding-top: 32px!important;
+    padding-bottom: 32px!important;
+}
+
+.padding-64{
+    padding-bottom: 64px!important;
+}
+
+.center {
+    text-align: center!important;
+}
+
+.gray-box{
+    background-color: rgb(235, 235, 235);
+    padding: 1rem 5rem 2rem;
+    overflow: hidden;
+    max-height: 320px;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+}
+
+.gray-box p{
+    margin: 0 8rem;
+    overflow: hidden;
+}
+
+.about-container{
+    max-height: 519px;
+    overflow: hidden;
+}
+
+.about-info{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.about-box{
+    padding: .75rem .5rem;
+}
+
+.about-img{
+    height: 8rem;
+    width: 6rem;
+}
+
+.about-title{
+    font-size: 1.5rem;
+}
+
+.footer{
+    border-top: 1px solid #ccc;
+}
+
+.footer p{
+    color: black;
+    padding-left: 20rem;
+}
+
+
+
+@media (min-width:1040px) and (max-width:1260px){
+    #main{
+        width: 85%;
+    }
+    }
+
+    @media (min-width:850px) and (max-width:1039px){
+        #main{
+            width: 82%;
+        }
+        }
+
+        @media (min-width:635px) and (max-width:849px){
+            #main{
+                width: 75%;
+            }
+            }
+
+            @media (min-width:557px) and (max-width:634px){
+                #main{
+                    width: 70%;
+                }
+                }
+
+                @media (min-width:540px) and (max-width:556px){
+                    #main{
+                        width: 68%;
+                    }
+                    }
+
+                    @media (min-width:500px) and (max-width:529px){
+                        #main{
+                            width: 65%;
+                        }
+                        }
+
+                        @media (min-width:280px) and (max-width:499px){
+                            #main{
+                                width: 60%;
+                            }
+                            }
+    
